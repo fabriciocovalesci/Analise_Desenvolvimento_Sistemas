@@ -9,7 +9,7 @@
 * Rode o script main.py
 
 # Comandos
-* git clone 
+* git clone https://github.com/fabriciocovalesci/Analise_Desenvolvimento_Sistemas 
 * cd Analise_Desenvonvimento_Sistemas/ProgramacaoI/Fruteira
 * python3 -m venv .venv
 * source .venv/bin/activate
