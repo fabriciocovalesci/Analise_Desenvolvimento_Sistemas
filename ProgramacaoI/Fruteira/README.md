@@ -4,6 +4,7 @@
  
 * Como rodar o projeto
 * Clone esse repositório.
+* Vá até a pasta Fruteira
 * Crie um virtualenv com Python 3.
 * Ative o virtualenv.
 * Rode o script main.py
