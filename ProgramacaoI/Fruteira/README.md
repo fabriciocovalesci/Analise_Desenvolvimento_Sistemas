@@ -8,6 +8,7 @@
 * Ative o virtualenv.
 * Rode o script main.py
 
+# Comandos
 * git clone 
 * cd Analise_Desenvonvimento_Sistemas/ProgramacaoI/Fruteira
 * python3 -m venv .venv
@@ -15,6 +16,6 @@
 * python3 main.py
 
 
-# PACOTE ANACONDA NECESSÁRIO
+# Pacote Anaconda necessário
 https://www.anaconda.com/distribution/
 
