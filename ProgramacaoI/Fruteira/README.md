@@ -1,6 +1,6 @@
 # Fruteira
 
- Sistema de cadastro, venda, visualização por meio de gráficos de pizza e de barras, feitos com a biblioteca matplotlib, também foi utilizados as bibliotecas como pandas e numpy.
+ Sistema de cadastro, venda, visualização por meio de gráficos de pizza e de barras, feitos com a biblioteca matplotlib, também foi utilizados as bibliotecas pandas e numpy.
  
 * Como rodar o projeto
 * Clone esse repositório.
