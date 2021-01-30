@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="Numero 1">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutX="164.0" layoutY="64.0" prefHeight="239.0" prefWidth="273.0">
+                     <children>
+                        <Label layoutX="85.0" layoutY="112.0" prefHeight="16.0" prefWidth="103.0" text="Hello World !!" textAlignment="CENTER" />
+                        <Button fx:id="idBtn1" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" text="numero 3" />
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Numero 3">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutX="144.0" layoutY="84.0" prefHeight="200.0" prefWidth="315.0">
+                     <children>
+                        <Button fx:id="idBotao" layoutX="116.0" layoutY="111.0" mnemonicParsing="false" onAction="#aperte" text="Click" />
+                        <Label fx:id="idLabel" contentDisplay="CENTER" layoutX="42.0" layoutY="76.0" prefHeight="16.0" prefWidth="245.0" text="Estou aqui...." textOverrun="CLIP">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Numero 4">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutX="15.0" layoutY="70.0" prefHeight="200.0" prefWidth="580.0">
+                     <children>
+                        <Label fx:id="idLabel3" layoutX="169.0" layoutY="45.0" prefHeight="16.0" prefWidth="226.0" text="Estou aqui ? Ou não !!" />
+                        <Button fx:id="idBotao3" layoutX="236.0" layoutY="100.0" mnemonicParsing="false" onAction="#toogle" text="Esconder" />
+                        <Label fx:id="idLabel4Hide" layoutX="169.0" layoutY="144.0" prefHeight="16.0" prefWidth="192.0" text="Ou tou aqui...." />
+                        <Button fx:id="idAparecer" layoutX="330.0" layoutY="100.0" mnemonicParsing="false" onAction="#aparecer" text="Aparecer" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Numero 6">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutX="39.0" layoutY="33.0" prefHeight="299.0" prefWidth="532.0">
+                     <children>
+                        <Button fx:id="idBotao6" layoutX="181.0" layoutY="137.0" mnemonicParsing="false" onAction="#getName" text="Checar" />
+                        <TextField fx:id="idInput" layoutX="181.0" layoutY="82.0" />
+                        <Text layoutX="181.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="90.7294921875" />
+                        <Label fx:id="idLabel6" layoutX="181.0" layoutY="180.0" prefHeight="16.0" prefWidth="185.0" />
+                        <Button fx:id="idBotaoLimpar" layoutX="289.0" layoutY="137.0" mnemonicParsing="false" onAction="#clearName" text="Limpar" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
