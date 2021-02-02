@@ -4,16 +4,36 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class Controller {
 
+
+    @FXML
+    private Tab tab1;
+
+    @FXML
+    private Button idBtn1;
+
+    @FXML
+    private Button idBtn4;
+
+    @FXML
+    private Button idbtn6;
+
+    @FXML
+    private Tab tab3;
 
     @FXML
     private Button idBotao;
 
     @FXML
     private Label idLabel;
+
+    @FXML
+    private Tab tab4;
 
     @FXML
     private Label idLabel3;
@@ -25,6 +45,12 @@ public class Controller {
     private Label idLabel4Hide;
 
     @FXML
+    private Button idAparecer;
+
+    @FXML
+    private Tab tab6;
+
+    @FXML
     private Button idBotao6;
 
     @FXML
@@ -34,7 +60,10 @@ public class Controller {
     private Label idLabel6;
 
     @FXML
-    private Button idAparecer;
+    private Button idBotaoLimpar;
+
+    @FXML
+    private Button idfechar;
 
     //  ****************  FUNÇÕES  ****************************************
     @FXML
@@ -63,5 +92,11 @@ public class Controller {
     public void clearName(ActionEvent actionEvent) {
         idLabel6.setText("");
         idInput.setText("");
+
+    }
+
+    public void Fechar(ActionEvent actionEvent) {
+        Stage stage = (Stage) idfechar.getScene().getWindow();
+        stage.close();
     }
 }

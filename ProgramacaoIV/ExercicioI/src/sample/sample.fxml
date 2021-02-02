@@ -12,20 +12,23 @@
 
 <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <tabs>
-    <Tab text="Numero 1">
+    <Tab fx:id="tab1" text="Numero 1">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Pane layoutX="164.0" layoutY="64.0" prefHeight="239.0" prefWidth="273.0">
+                  <Pane layoutX="81.0" layoutY="64.0" prefHeight="239.0" prefWidth="439.0">
                      <children>
-                        <Label layoutX="85.0" layoutY="112.0" prefHeight="16.0" prefWidth="103.0" text="Hello World !!" textAlignment="CENTER" />
-                        <Button fx:id="idBtn1" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" text="numero 3" />
+                        <Label layoutX="168.0" layoutY="142.0" prefHeight="16.0" prefWidth="103.0" text="Hello World !!" textAlignment="CENTER" />
+                        <Button fx:id="idBtn1" layoutX="57.0" layoutY="56.0" mnemonicParsing="false" text="numero 3" />
+                        <Button fx:id="idBtn4" layoutX="179.0" layoutY="56.0" mnemonicParsing="false" text="numero 4" />
+                        <Button fx:id="idbtn6" layoutX="302.0" layoutY="56.0" mnemonicParsing="false" text="numero 6" />
                      </children>
                   </Pane>
+                  <Button fx:id="idfechar" layoutX="513.0" layoutY="30.0" mnemonicParsing="false" onAction="#Fechar" text="Fechar" />
                </children></AnchorPane>
       </content>
     </Tab>
-    <Tab text="Numero 3">
+    <Tab fx:id="tab3" text="Numero 3">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
@@ -41,7 +44,7 @@
                </children></AnchorPane>
       </content>
     </Tab>
-      <Tab text="Numero 4">
+      <Tab fx:id="tab4" text="Numero 4">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
@@ -57,7 +60,7 @@
             </AnchorPane>
         </content>
       </Tab>
-      <Tab text="Numero 6">
+      <Tab fx:id="tab6" text="Numero 6">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
