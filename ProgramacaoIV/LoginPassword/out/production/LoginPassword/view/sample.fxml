@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="434.0" prefWidth="557.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="idPaneLogin" text="Login">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="331.0" prefWidth="462.0">
+                     <children>
+                        <AnchorPane prefHeight="402.0" prefWidth="557.0">
+                           <children>
+                              <TextField fx:id="idInputUser" layoutX="193.0" layoutY="142.0" />
+                              <Text layoutX="195.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="167.7294921875" />
+                               <PasswordField fx:id="idInputSenha" layoutX="193.0" layoutY="201.0" />
+                               <Text layoutX="195.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" textAlignment="CENTER" wrappingWidth="167.7294921875" />
+                              <Button fx:id="idBotaoEntrar" layoutX="193.0" layoutY="266.0" mnemonicParsing="false" onAction="#Login" prefHeight="26.0" prefWidth="171.0" text="Entrar" />
+                              <Text layoutX="196.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="169.7294921875">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="idLabelLogin" alignment="CENTER" layoutX="111.0" layoutY="305.0" prefHeight="16.0" prefWidth="340.0" textAlignment="CENTER" />
+                              <CheckBox fx:id="idCheck" layoutX="369.0" layoutY="205.0" mnemonicParsing="false" onAction="#showPass" text="Ver Senha" />
+                              <Label fx:id="showpass" alignment="CENTER" layoutX="193.0" layoutY="227.0" prefHeight="16.0" prefWidth="170.0" textAlignment="CENTER" />
+                              <Button fx:id="BtnSair" layoutX="461.0" layoutY="14.0" mnemonicParsing="false" onAction="#SairAPP" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #588ef2;" text="Sair" textFill="#f5f2f2" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="idPaneCadastro" disable="true" text="Cadastro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="191.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro" textAlignment="CENTER" wrappingWidth="174.7294921875">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="196.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" textAlignment="CENTER" wrappingWidth="166.7294921875" />
+                        <Text layoutX="196.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" textAlignment="CENTER" wrappingWidth="164.7294921875" />
+                        <Text layoutX="177.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmar Senha" textAlignment="CENTER" wrappingWidth="187.7294921875" />
+                        <TextField fx:id="idNomeCadastro" layoutX="194.0" layoutY="111.0" />
+                        <TextField fx:id="idSenhaCadastro" layoutX="194.0" layoutY="173.0" />
+                        <TextField fx:id="idConfirmSenhaCadastro" layoutX="194.0" layoutY="234.0" />
+                        <Button fx:id="idBotaoCadastCadatrar" layoutX="194.0" layoutY="315.0" mnemonicParsing="false" onAction="#CadastrarUser" prefHeight="26.0" prefWidth="171.0" text="Cadastrar" textAlignment="CENTER" />
+                        <Label fx:id="idLabelCadastrar" alignment="CENTER" layoutX="137.0" layoutY="354.0" prefHeight="16.0" prefWidth="267.0" />
+                        <RadioButton fx:id="checkAdmin" layoutX="244.0" layoutY="278.0" mnemonicParsing="false" text="Admin">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="idPaneHome" disable="true" text="Home">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="idLogout" layoutX="480.0" layoutY="16.0" mnemonicParsing="false" onAction="#Logout" style="-fx-background-color: #588ef2;" text="Logout" textFill="WHITE" />
+                        <Label alignment="CENTER" layoutX="83.0" layoutY="14.0" prefHeight="30.0" prefWidth="391.0" text="Sistema" textAlignment="CENTER" textFill="#2122db">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="72.0" layoutY="67.0" prefHeight="16.0" prefWidth="132.0" text="Cadastrar Cliente">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="67.0" prefHeight="16.0" prefWidth="124.0" text="Editar Cliente">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="339.0" layoutY="143.0" prefHeight="16.0" prefWidth="136.0" text="Deletar Cliente">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="BtnCadasCliente" layoutX="68.0" layoutY="86.0" mnemonicParsing="false" onAction="#goCadastroC" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #588ef2;" text="Cadastrar">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="BtnEditCliente" layoutX="338.0" layoutY="86.0" mnemonicParsing="false" onAction="#goEditarCliente" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #7dc4f0;" text="Editar">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="BtnDelCliente" layoutX="338.0" layoutY="162.0" mnemonicParsing="false" onAction="#DeletarCliente" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #c51837;" text="Deletar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="BtnBuscaCliente" layoutX="57.0" layoutY="162.0" mnemonicParsing="false" onAction="#findCliente" prefHeight="29.0" prefWidth="163.0" style="-fx-background-color: #588ef2;" text="Listar Clientes" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="inputDelCliente" layoutX="321.0" layoutY="201.0" promptText="Nome cliente" />
+                        <VBox fx:id="stackVBOX" layoutX="33.0" layoutY="191.0" prefHeight="200.0" prefWidth="182.0">
+                           <children>
+                              <Label fx:id="labelVbox" prefHeight="16.0" prefWidth="199.0" />
+                           </children>
+                        </VBox>
+                        <Label fx:id="labelInfoDeletar" alignment="CENTER" layoutX="275.0" layoutY="234.0" prefHeight="16.0" prefWidth="275.0" textAlignment="CENTER" textFill="#da0c0c" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="idTabCadastraCliente" disable="true" text="Cadastrar">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="154.0" layoutY="14.0" prefHeight="16.0" prefWidth="250.0" text="Cadastrar Cliente" textFill="#1d2bc3">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inputNomeCadastro" layoutX="69.0" layoutY="90.0" promptText="Nome" />
+                        <TextField fx:id="inputEmailCadastro" layoutX="69.0" layoutY="147.0" promptText="nome@nome.com" />
+                        <TextField fx:id="inputTelefoneCadastro" layoutX="69.0" layoutY="208.0" promptText="9999999" />
+                        <Label alignment="CENTER" layoutX="69.0" layoutY="74.0" prefHeight="16.0" prefWidth="170.0" text="Nome" />
+                        <Label alignment="CENTER" layoutX="69.0" layoutY="131.0" prefHeight="16.0" prefWidth="170.0" text="E-mail" />
+                        <Label alignment="CENTER" layoutX="70.0" layoutY="193.0" prefHeight="16.0" prefWidth="170.0" text="Telefone" />
+                        <TextField fx:id="inputEnderecoCadastro" layoutX="309.0" layoutY="90.0" promptText="endereço" />
+                        <Label alignment="CENTER" layoutX="310.0" layoutY="74.0" prefHeight="16.0" prefWidth="170.0" text="Endereço" />
+                        <Label alignment="CENTER" layoutX="311.0" layoutY="131.0" prefHeight="16.0" prefWidth="170.0" text="Data Nascimento" />
+                         <DatePicker fx:id="inputDataCadastro" layoutX="296.0" layoutY="147.0" promptText="Data" />
+                         <TextField fx:id="inputCpfCadastro" layoutX="309.0" layoutY="208.0" promptText="00000000000" />
+                        <Label alignment="CENTER" layoutX="310.0" layoutY="193.0" prefHeight="16.0" prefWidth="170.0" text="CPF" />
+                        <Button fx:id="BtnNewCadastro" layoutX="206.0" layoutY="272.0" mnemonicParsing="false" onAction="#CadastrarNewCliente" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #588ef2;" text="Cadastrar" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="BtnCancelarCadastro" layoutX="206.0" layoutY="320.0" mnemonicParsing="false" onAction="#CancelarCadastro" prefHeight="26.0" prefWidth="147.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="idTabEditaCliente" disable="true" text="Editar">
+              <content>
+                <AnchorPane disable="true" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="183.0" layoutY="14.0" prefHeight="16.0" prefWidth="192.0" text="Atualizar Cliente" textFill="#1d2bc3">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="48.0" prefHeight="16.0" prefWidth="204.0" text="Cliente a ser atualizado" />
+                        <Button fx:id="BtnBuscaUpdate" layoutX="14.0" layoutY="64.0" mnemonicParsing="false" onAction="#BuscarClienteAtualizar" text="Buscar" />
+                        <TextField fx:id="inputBuscaUpdate" layoutX="76.0" layoutY="64.0" promptText="Pesquisar Cliente" />
+                        <Label alignment="CENTER" layoutX="77.0" layoutY="125.0" prefHeight="16.0" prefWidth="169.0" text="Nome" />
+                        <TextField fx:id="inputNomeUpdate" layoutX="76.0" layoutY="141.0" />
+                        <TextField fx:id="inputEnderecoUpdate" layoutX="329.0" layoutY="141.0" />
+                        <TextField fx:id="inputEmailUpdate" layoutX="76.0" layoutY="201.0" />
+                        <Label alignment="CENTER" layoutX="77.0" layoutY="185.0" prefHeight="16.0" prefWidth="169.0" text="E-mail" />
+                        <Label alignment="CENTER" layoutX="330.0" layoutY="125.0" prefHeight="16.0" prefWidth="169.0" text="Endereço" />
+                        <TextField fx:id="inputTelefoneUpdate" layoutX="76.0" layoutY="261.0" />
+                        <Label alignment="CENTER" layoutX="77.0" layoutY="245.0" prefHeight="16.0" prefWidth="169.0" text="Telefone" />
+                        <TextField fx:id="inputCpfUpdate" layoutX="329.0" layoutY="261.0" />
+                        <Label alignment="CENTER" layoutX="330.0" layoutY="245.0" prefHeight="16.0" prefWidth="169.0" text="CPF" />
+                        <Label alignment="CENTER" layoutX="330.0" layoutY="185.0" prefHeight="16.0" prefWidth="169.0" text="Data de Nascimento" />
+                        <DatePicker fx:id="inputDataUpdate" layoutX="316.0" layoutY="201.0" />
+                        <Button fx:id="BtnAtualizarUpdate" layoutX="203.0" layoutY="299.0" mnemonicParsing="false" onAction="#UpdateCliente" prefHeight="26.0" prefWidth="152.0" text="Atualizar Cadastro" />
+                        <Button fx:id="BtnCancelarUpdate" layoutX="203.0" layoutY="342.0" mnemonicParsing="false" onAction="#CancelarUpdate" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="labelBuscaCliente" layoutX="76.0" layoutY="90.0" prefHeight="16.0" prefWidth="242.0" textFill="#dd0b0b" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="TabPaneAdmin" text="Admin">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="BtnAdmCadastraFunc" layoutX="26.0" layoutY="39.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #588ef2;" text="Cadastrar" textFill="WHITE" />
+                        <Label layoutX="26.0" layoutY="23.0" prefHeight="16.0" prefWidth="169.0" text="Cadastrar Funcionário" />
+                        <TitledPane fx:id="TitlePaneFunc" alignment="CENTER" expanded="false" layoutX="341.0" layoutY="23.0" onMouseClicked="#OpenTitledPane" text="Funcionários">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox fx:id="vBoxInTitled" layoutY="5.0" prefHeight="167.0" prefWidth="196.0" />
+                                 </children></AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <Button fx:id="AdmBtnExcFunc" layoutX="26.0" layoutY="188.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: red;" text="Excluir" textFill="WHITE" />
+                        <TextField fx:id="AdmInputExcFunc" layoutX="164.0" layoutY="188.0" promptText="Nome funcionario" />
+                        <Label alignment="CENTER" layoutX="26.0" layoutY="172.0" prefHeight="16.0" prefWidth="308.0" text="Excluir Funcionário" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Area Cliente">
+              <content>
+                <AnchorPane fx:id="TabPaneCliente" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
