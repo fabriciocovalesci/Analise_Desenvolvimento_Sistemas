@@ -100,6 +100,7 @@ public class UserDAO extends Connect{
                 result.setNome(rs.getString("nome"));
                 result.setSenha(rs.getString("senha"));
                 result.setAdmin(rs.getBoolean("admin"));
+                result.setId(rs.getInt("ID"));
             }
             System.out.println("Consulta realizada !");
         }catch (SQLException e){
@@ -123,6 +124,7 @@ public class UserDAO extends Connect{
                 usuario.setNome(rs.getString("nome"));
                 usuario.setSenha(rs.getString("senha"));
                 usuario.setAdmin(rs.getBoolean("admin"));
+                usuario.setId(rs.getInt("ID"));
                 usuarios.add(usuario);
             }
             System.out.println("Consulta de buscar todos usuarios realizada !");
