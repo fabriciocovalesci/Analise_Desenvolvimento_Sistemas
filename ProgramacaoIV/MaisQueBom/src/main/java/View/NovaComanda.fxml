@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneNewComanda" prefHeight="650.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerFunc">
+   <children>
+      <Button fx:id="salvarComanda" layoutX="101.0" layoutY="559.0" mnemonicParsing="false" onAction="#salvarComanda" prefHeight="26.0" prefWidth="186.0" text="Salvar" />
+      <Label alignment="CENTER" layoutX="49.0" layoutY="14.0" prefHeight="50.0" prefWidth="289.0" text="Criar Comanda" textFill="#144ee1">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <VBox fx:id="vboxPrd" layoutX="39.0" layoutY="94.0" prefHeight="444.0" prefWidth="323.0">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner11">
+               <children>
+                  <TextField fx:id="qtadePRD1" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd1" mnemonicParsing="false" text="Pastel">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco1" alignment="CENTER" prefHeight="21.0" prefWidth="140.0" text="7.50">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner111">
+               <children>
+                  <TextField fx:id="qtadePRD2" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd2" mnemonicParsing="false" text="Coxinha">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco2" alignment="CENTER" prefHeight="21.0" prefWidth="135.0" text="3.00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner1111">
+               <children>
+                  <TextField fx:id="qtadePRD3" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd3" mnemonicParsing="false" text="Pão de queijo">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco3" alignment="CENTER" prefHeight="21.0" prefWidth="93.0" text="4.50">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner11111">
+               <children>
+                  <TextField fx:id="qtadePRD4" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd4" mnemonicParsing="false" text="Baguete">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco4" alignment="CENTER" prefHeight="21.0" prefWidth="156.0" text="3.00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner111111">
+               <children>
+                  <TextField fx:id="qtadePRD5" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd5" mnemonicParsing="false" text="Agua">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco5" alignment="CENTER" prefHeight="21.0" prefWidth="176.0" text="3.00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner1111111">
+               <children>
+                  <TextField fx:id="qtadePRD6" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd6" mnemonicParsing="false" text="Refrigerante">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco6" alignment="CENTER" prefHeight="21.0" prefWidth="130.0" text="3.50">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner11111111">
+               <children>
+                  <TextField fx:id="qtadePRD7" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd7" mnemonicParsing="false" text="Suco">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco7" alignment="CENTER" prefHeight="21.0" prefWidth="164.0" text="5.00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner111111111">
+               <children>
+                  <TextField fx:id="qtadePRD8" maxWidth="50.0" />
+                  <CheckBox fx:id="checkProd8" mnemonicParsing="false" text="Cerveja">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label fx:id="preco8" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="167.0" text="7.00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner1111111111">
+               <children>
+                  <Label fx:id="preco101" contentDisplay="CENTER" prefHeight="21.0" prefWidth="127.0" text="Nome Comanda">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="NomeComanda" alignment="CENTER" maxWidth="195.0" prefHeight="26.0" prefWidth="195.0">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="323.0" fx:id="xboxContainner11111111111">
+               <children>
+                  <Label fx:id="preco1011" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="314.0" text="Número da Mesa">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="323.0" fx:id="xboxContainner111111111111">
+               <children>
+                  <CheckBox fx:id="mesa1" alignment="CENTER" mnemonicParsing="false" prefHeight="18.0" prefWidth="89.0" text="1" />
+                  <CheckBox fx:id="mesa2" alignment="CENTER" mnemonicParsing="false" prefHeight="18.0" prefWidth="67.0" text="2">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="mesa3" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="18.0" prefWidth="73.0" text="3">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="323.0" fx:id="xboxContainner1111111111111">
+               <children>
+                  <CheckBox fx:id="mesa4" alignment="CENTER" mnemonicParsing="false" prefHeight="18.0" prefWidth="89.0" text="4" />
+                  <CheckBox fx:id="mesa5" alignment="CENTER" mnemonicParsing="false" prefHeight="18.0" prefWidth="67.0" text="5">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="mesa6" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="18.0" prefWidth="73.0" text="6">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="39.0" layoutY="64.0" prefHeight="16.0" prefWidth="323.0" text="Quantidade             Produto            Preço" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
