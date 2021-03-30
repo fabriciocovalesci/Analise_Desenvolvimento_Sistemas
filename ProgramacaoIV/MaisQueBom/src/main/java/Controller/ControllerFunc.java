@@ -482,7 +482,10 @@ public class ControllerFunc implements Subject {
 
 
     public void LogoutFuncionario(ActionEvent actionEvent) {
-        stageFuncionario.close();
+        logoutFuncionario.setOnAction( e -> {
+            Stage stage = (Stage) ((Button) e.getSource()).getScene().getWindow();
+            stage.close();
+        });
     }
 
     public void ComandasAtivas(ActionEvent actionEvent) {
@@ -500,9 +503,6 @@ public class ControllerFunc implements Subject {
             Label labelNumeroMesa = new Label();
 
 
-
-
-
             for (int index = 0; index < lisComandasAtivas.size(); index++) {
                 VBox BoxComanda = new VBox();
                 labelNomeComanda.setText(lisComandasAtivas.get(index).getNome_comanda());
@@ -518,8 +518,6 @@ public class ControllerFunc implements Subject {
                 vboxFuncionario.getChildren().add(BoxComanda);
 
             }
-
-
 
         }catch (Exception e){
             System.out.println("Error ao buscar as comandas " + e);
