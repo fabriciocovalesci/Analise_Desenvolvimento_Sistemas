@@ -777,12 +777,13 @@ public class ControllerAdmin {
 
         if ((result.isPresent()) && (result.get() == ButtonType.OK)) {
             try {
-                Date dataJava = new Date();
-                java.sql.Date dateFinal = new java.sql.Date(dataJava.getTime());
                 Comanda encerrarUpdate = new Comanda();
 
+                java.util.Date dateJava = new java.util.Date();
+                java.sql.Date dataSql = new java.sql.Date(dateJava.getTime());
+
                 encerrarUpdate.setStatus_pagamento("Pago");
-                encerrarUpdate.setDataFinaliza(dateFinal);
+                encerrarUpdate.setDataFinaliza(dataSql);
                 encerrarUpdate.setPago(true);
                 encerrarUpdate.setId(encerrar.getId());
 

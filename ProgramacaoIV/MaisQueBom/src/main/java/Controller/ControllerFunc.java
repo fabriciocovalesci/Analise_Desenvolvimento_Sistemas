@@ -505,6 +505,7 @@ public class ControllerFunc implements Subject {
 
             for (int index = 0; index < lisComandasAtivas.size(); index++) {
                 VBox BoxComanda = new VBox();
+
                 labelNomeComanda.setText(lisComandasAtivas.get(index).getNome_comanda());
                 labelQuantidade.setText(String.valueOf(lisComandasAtivas.get(index).getQuantidade()));
                 labelValorTotal.setText(String.valueOf(lisComandasAtivas.get(index).getValor_total()));
@@ -516,9 +517,7 @@ public class ControllerFunc implements Subject {
                 BoxComanda.getChildren().add(labelNumeroMesa);
 
                 vboxFuncionario.getChildren().add(BoxComanda);
-
             }
-
         }catch (Exception e){
             System.out.println("Error ao buscar as comandas " + e);
         }

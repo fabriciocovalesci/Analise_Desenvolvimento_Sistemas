@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="95.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+  <tabs>
+    <Tab fx:id="tabLogin" text="Login">
+      <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                  <VBox alignment="TOP_CENTER" layoutX="224.0" layoutY="14.0" prefHeight="367.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                          <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="CRUD com Login">
+                              <VBox.margin>
+                                  <Insets top="50.0" />
+                              </VBox.margin>
+                              <font>
+                                  <Font size="30.0" />
+                              </font>
+                          </Label>
+                          <HBox maxWidth="1.7976931348623157E308" prefHeight="1.0" prefWidth="600.0">
+                              <children>
+                                  <Label text="Email:" HBox.hgrow="SOMETIMES">
+                                      <HBox.margin>
+                                          <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                                      </HBox.margin>
+                                  </Label>
+                                  <TextField fx:id="tfLoginEmail" maxWidth="1.7976931348623157E308" minWidth="-Infinity" onKeyPressed="#loginEnter" HBox.hgrow="ALWAYS">
+                                      <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="50.0" top="10.0" />
+                                      </HBox.margin>
+                                  </TextField>
+                              </children>
+                          </HBox>
+                          <HBox maxWidth="1.7976931348623157E308" prefHeight="1.0" prefWidth="600.0">
+                              <children>
+                                  <Label text="Senha:" HBox.hgrow="SOMETIMES">
+                                      <HBox.margin>
+                                          <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                                      </HBox.margin>
+                                  </Label>
+                                  <PasswordField fx:id="tfLoginSenha" maxWidth="1.7976931348623157E308" minWidth="-Infinity" onKeyPressed="#loginEnter" HBox.hgrow="ALWAYS">
+                                      <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="50.0" top="10.0" />
+                                      </HBox.margin>
+                                  </PasswordField>
+                              </children>
+                          </HBox>
+                          <Button fx:id="btLogin" mnemonicParsing="false" onAction="#realizarLogInOff" text="Login" />
+                      </children>
+                      <padding>
+                          <Insets top="30.0" />
+                      </padding>
+                  </VBox>
+              </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="tabVisualizar" disable="true" text="Visualizar">
+      <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+      <Tab fx:id="tabExcluir" disable="true" text="Excluir">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab fx:id="tabInserir" disable="true" text="Inserir">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab fx:id="tabAtualizar" disable="true" text="Atualizar">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
