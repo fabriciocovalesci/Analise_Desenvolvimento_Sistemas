@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pessoas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cliente" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string" />
+                            <xs:element name="nome" type="xs:string" />
+                            <xs:element name="cpf" type="xs:string" />
+                            <xs:element name="email" type="xs:string" />
+                            <xs:element name="sexo" type="xs:string" />
+                            <xs:element name="cidade" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="funcionario" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string" />
+                            <xs:element name="nome" type="xs:string" />
+                            <xs:element name="cpf" type="xs:string" />
+                            <xs:element name="email" type="xs:string" />
+                            <xs:element name="sexo" type="xs:string" />
+                            <xs:element name="cidade" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

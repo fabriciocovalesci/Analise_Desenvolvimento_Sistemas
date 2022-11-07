@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pessoas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="clienteWilliam.xsd">
+
+<cliente>
+<id>1</id>
+<nome> fabricio </nome>
+<cpf> 1234567890 </cpf>
+<email>fabricio@gmail.com</email>
+<sexo>masculino</sexo>
+<cidade>passo fundo</cidade>
+</cliente>
+
+<cliente>
+<id>2</id>
+<nome> gabriel </nome>
+<cpf> 1234567890 </cpf>
+<email>gabriel@gmail.com</email>
+<sexo>masculino</sexo>
+<cidade>sertao</cidade>
+</cliente>
+
+<cliente>
+<id>3</id>
+<nome> lucas </nome>
+<cpf> 1234567890 </cpf>
+<email>lucas@gmail.com</email>
+<sexo>masculino</sexo>
+<cidade>passo fundo</cidade>
+</cliente>
+
+<funcionario>
+<id>1</id>
+<nome> maria </nome>
+<cpf> 1234567890 </cpf>
+<email>maria@gmail.com</email>
+<sexo>feminino</sexo>
+<cidade>erechim</cidade>
+</funcionario>
+
+<funcionario>
+<id>2</id>
+<nome> fabricio </nome>
+<cpf> 1234567890 </cpf>
+<email>fabricio@gmail.com</email>
+<sexo>masculino</sexo>
+<cidade>passo fundo</cidade>
+</funcionario>
+
+<funcionario>
+<id>3</id>
+<nome> marcio </nome>
+<cpf> 1234567890 </cpf>
+<email>marcio@gmail.com</email>
+<sexo>masculino</sexo>
+<cidade>passo fundo</cidade>
+</funcionario>
+
+</pessoas>

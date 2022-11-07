@@ -1,0 +1,36 @@
+
+
+/*
+PARA TABELA PRODUTOS:
+CRIAR UMA COLUNA COM O NOME “DESCONTO” E CRIAR UM GATILHO QUE
+QUANDO VOCÊ ATUALIZA (UPDATE) NO VALOR DO PRODUTO, ELE INSIRA O MESMO
+VALOR COM DESCONTO A VISTA (10%) JÁ NA COLUNA DE DESCONTO.
+*/
+
+ALTER TABLE produtos ADD COLUMN desconto DECIMAL(7,2);
+
+CREATE TRIGGER `produtos_after_update` BEFORE UPDATE ON `produtos` FOR EACH ROW BEGIN
+   SET NEW.desconto = NEW.preco * 0.9;
+END
+
+SELECT * FROM produtos;
+INSERT INTO produtos (codigoProduto, nome, quantidade, preco) VALUES (006, 'melao', 10, 1.99);
+UPDATE produtos SET preco = 6.00 WHERE id = 7;
+
+
+/*
+PARA TABELA FUNCIONÁRIOS:
+INSERIR NA TABELA UMA COLUNA COM O SALARIO LIQUIDO E QUANDO
+VOCÊ INSERIR O VALOR (INSERT) NA COLUNA SALÁRIO ELE APLICA O VALOR DO
+SALARIO BRUTO JÁ COM DESCONTO (DE 10%)
+*/
+
+ALTER TABLE funcionario ADD COLUMN salario_liquido DECIMAL(10,2);
+
+CREATE TRIGGER `funcionario_before_insert` BEFORE INSERT ON `funcionario` FOR EACH ROW BEGIN
+	SET NEW.salario_liquido = NEW.salario * 0.9;
+END
+
+SELECT * FROM funcionario
+INSERT INTO funcionario (codigoFuncionario, nome, telefone, endereco, documento, salario) 
+VALUES (0011, 'Lucas andrade', 1125312803, 'Rua Raul 15' , '11067398509', 130.50);
