@@ -1,0 +1,74 @@
+CREATE TABLE Veiculo( id_placa serial not null primary key,
+				ano_fabricacao smallint not null,
+				modelo varchar(100) not null,
+				cor varchar(100) not null
+				);
+
+CREATE TABLE Proprietario(id_proprietario serial not null primary key,
+				carteira_habilitacao char(11) unique not null  check(carteira_habilitacao '^[0-9]{11}$'),
+				data_nascimento date not null,
+				nome varchar(100) not null,
+				sobrenome varchar(100) not null,
+				cpf char(11) unique not null  check(cpf '^[0-9]{11}$'),
+				identidade char(12) unique not null  check(identidade '^[0-9]{12}$')
+				);
+
+CREATE TABLE Propriedade( id_proprietario integer not null ,
+				id_placa integer not null ,
+				primary key(id_placa, id_proprietario)
+				);
+
+CREATE TABLE Setor( id_setor  serial not null primary key,
+				descricao varchar(100) not null,
+				identificacao smallint not null
+				);
+
+CREATE TABLE Vaga( id_vaga  serial not null primary key,
+				descricao varchar(100) not null,
+				identificacao smallint not null,
+				porte varchar(100) not null,
+				id_setor integer not null
+				);
+
+CREATE TABLE Locacao(id_dataHoraChegada date not null primary key,
+				 dataHoraSaida date not null,
+				id_pagamento integer not null,
+				id_placa integer not null,
+				id_vaga integer not null
+				);
+
+CREATE TABLE Pagamento( id_pagamento  real not null primary key,
+				valor real not null,
+				data date not null
+				);
+                
+                
+-------------- Add foreign key
+
+alter table Propriedade add foreign key(id_proprietario) references Proprietario;
+alter table Propriedade add foreign key(id_placa) references Veiculo;
+
+alter table Vaga add foreign key(id_setor) references Setor;
+
+alter table Locacao add foreign key(id_pagamento) references Pagamento;
+alter table Locacao add foreign key(id_placa) references Veiculo;
+alter table Locacao add foreign key(id_vaga) references Vaga;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

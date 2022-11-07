@@ -1,0 +1,9 @@
+TRABALHO FINAL DE TÓPICOS ESPECIAIS
+
+Utilizar camera cam para para reconhecer pessoa, e ligar lampada ou de permitir acesso algum ambiente controlado.
+
+LINK Face Recognition = https://github.com/ageitgey/face_recognition
+
+LINK DLIB C++ = http://dlib.net/
+
+Executar arquivo "reconhecimento.py", ele executa os módulos que irão enviar dados para arduino via serial.
